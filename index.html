@@ -3,21 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParaFleure - Accueil</title>
+    <title>ParaFleure - Boutique</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="logo">🌿 ParaFleure</div>
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/3022/3022709.png" alt="ParaFleure Logo" class="logo-img">
+            <span style="font-size: 24px; vertical-align: middle; font-weight: bold;">ParaFleure</span>
+        </div>
+
         <nav>
             <a href="index.html">Accueil</a>
-            <a href="inscription.html" class="btn-signup">S'inscrire</a>
+            <a href="#produits">Produits</a>
+            <a href="inscription.html" class="btn-signup">Inscription</a>
+            
+            <a href="#" class="panier-btn">
+                🛒 <span id="panier-count">0</span>
+            </a>
         </nav>
     </header>
-    <section class="hero">
-        <h1>Marhbe bik fi ParaFleure</h1>
-        <p>El Parapharmacie mte3ek en ligne.</p>
-        <a href="inscription.html" class="cta-button">S'inscrire Maintenant</a>
+
+    <section style="text-align: center; background: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80') center/cover; color: white; padding: 100px 20px;">
+        <div style="background: rgba(0,0,0,0.5); display: inline-block; padding: 20px; border-radius: 10px;">
+            <h1>Bienvenue chez ParaFleure</h1>
+            <p>La beauté et la santé au naturel.</p>
+        </div>
     </section>
+
+    <section id="produits" class="products-section">
+        <h2 class="products-title">Nos Meilleurs Produits</h2>
+        
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=60" alt="Crème" class="product-img">
+                <div class="product-info">
+                    <h3>Crème Hydratante Bio</h3>
+                    <span class="price">45.00 DT</span>
+                    <button class="add-btn" onclick="ajouterAuPanier('Crème Hydratante', 45)">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?auto=format&fit=crop&w=500&q=60" alt="Sérum" class="product-img">
+                <div class="product-info">
+                    <h3>Sérum Vitamine C</h3>
+                    <span class="price">62.50 DT</span>
+                    <button class="add-btn" onclick="ajouterAuPanier('Sérum Vitamine C', 62.5)">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1556228720-19160a2c748c?auto=format&fit=crop&w=500&q=60" alt="Écran Solaire" class="product-img">
+                <div class="product-info">
+                    <h3>Écran Solaire SPF 50+</h3>
+                    <span class="price">38.00 DT</span>
+                    <button class="add-btn" onclick="ajouterAuPanier('Écran Solaire', 38)">Ajouter au panier</button>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1571781926291-28b46a83289d?auto=format&fit=crop&w=500&q=60" alt="Huile" class="product-img">
+                <div class="product-info">
+                    <h3>Huile d'Argan Pure</h3>
+                    <span class="price">25.00 DT</span>
+                    <button class="add-btn" onclick="ajouterAuPanier('Huile Argan', 25)">Ajouter au panier</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ParaFleure Tunisia - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
