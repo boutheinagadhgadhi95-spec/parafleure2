@@ -1,0 +1,12 @@
+body { margin: 0; font-family: Arial, sans-serif; background-color: #f4fdf4; text-align: center;}
+header { background-color: #2e8b57; padding: 15px; display: flex; justify-content: space-between; color: white; align-items: center; }
+header a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; }
+.btn-signup { background: white; color: #2e8b57 !important; padding: 5px 10px; border-radius: 5px; }
+.hero { padding: 50px 20px; }
+.hero h1 { color: #2e8b57; }
+.cta-button { background-color: #2e8b57; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+/* Formulaire */
+.form-container { background: white; width: 300px; margin: 30px auto; padding: 20px; border: 1px solid #ddd; border-top: 5px solid #2e8b57; border-radius: 8px; }
+input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; }
+button { width: 100%; background: #2e8b57; color: white; padding: 10px; border: none; cursor: pointer; }
+button:hover { background: #1e5e3a; }
