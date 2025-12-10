@@ -65,3 +65,48 @@ nav a { color: white; margin: 0 15px; font-weight: 600; }
 
 /* Footer */
 footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+/* --- Correction Formulaire --- */
+.form-container {
+    background: white;
+    width: 350px; /* Baddelna el taille */
+    margin: 50px auto; /* Centré */
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    border-top: 5px solid #2e8b57;
+    text-align: left; /* Bech el texte ykoun à gauche */
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Mouhim barcha hedha */
+}
+
+.form-container button {
+    width: 100%;
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.form-container button:hover { background-color: #246b42; }
+
+/* Nzidou style lel groupe mta3 el champs */
+.input-group {
+    display: flex;
+    gap: 10px; /* Belek tji 7dha b3adhha */
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex-grow: 1; /* N5allihom yakdhou espace */
+    margin: 0;
+}
