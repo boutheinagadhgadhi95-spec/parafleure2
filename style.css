@@ -1,34 +1,43 @@
-/* General */
-body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f9fdf9; }
-a { text-decoration: none; }
+/* General - DARK MODE */
+body { 
+    margin: 0; 
+    font-family: 'Segoe UI', sans-serif; 
+    background-color: #1a1a1a; /* Fond foncé */
+    color: #e0e0e0; /* Texte clair */
+}
+a { text-decoration: none; color: #7fdbff; } /* Couleur link */
 
 /* Header & Nav */
 header {
-    background-color: #2e8b57;
+    background-color: #2e8b57; /* Couleur Vert Forest l9dima */
     padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Shadow akthar 9wi */
 }
 
-.logo-img { height: 50px; border-radius: 5px; } 
+.logo-img { 
+    height: 50px; 
+    border-radius: 50%; /* Logo dwayri */
+    background: white; /* Bech idhoher logo mli7 */
+} 
 
 nav a { color: white; margin: 0 15px; font-weight: 600; }
-.btn-signup { background: white; color: #2e8b57 !important; padding: 8px 15px; border-radius: 20px; }
+.btn-signup { background: #7fdbff; color: #1a1a1a !important; padding: 8px 15px; border-radius: 20px; }
 
 /* Panier */
-.panier-btn { font-size: 20px; cursor: pointer; position: relative; }
+.panier-btn { font-size: 20px; cursor: pointer; position: relative; color: white !important; }
 #panier-count {
-    background: red; color: white;
+    background: #ff4136; color: white;
     border-radius: 50%; padding: 2px 6px;
     font-size: 12px; position: absolute; top: -5px; right: -10px;
 }
 
 /* Section Produits */
 .products-section { text-align: center; padding: 40px 20px; }
-.products-title { color: #2e8b57; margin-bottom: 30px; font-size: 2em; }
+.products-title { color: #7fdbff; margin-bottom: 30px; font-size: 2em; } /* Couleur claire */
 
 /* Grid mta3 les produits */
 .products-grid {
@@ -40,12 +49,13 @@ nav a { color: white; margin: 0 15px; font-weight: 600; }
 
 /* Karta mta3 Produit */
 .product-card {
-    background: white;
+    background: #333333; /* Fond carte fonce */
+    color: #e0e0e0;
     width: 250px;
-    border: 1px solid #eee;
+    border: 1px solid #444;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     transition: transform 0.3s;
     text-align: center; 
 }
@@ -54,34 +64,35 @@ nav a { color: white; margin: 0 15px; font-weight: 600; }
 .product-img { width: 100%; height: 200px; object-fit: cover; }
 
 .product-info { padding: 15px; }
-.product-info h3 { margin: 10px 0; color: #333; font-size: 18px; }
-.price { color: #2e8b57; font-weight: bold; font-size: 18px; display: block; margin-bottom: 10px;}
+.product-info h3 { margin: 10px 0; color: #e0e0e0; font-size: 18px; }
+.price { color: #7fdbff; font-weight: bold; font-size: 18px; display: block; margin-bottom: 10px;}
 
 .add-btn {
     background-color: #2e8b57; color: white;
     border: none; padding: 10px; width: 100%;
     cursor: pointer; border-radius: 5px;
 }
-.add-btn:hover { background-color: #246b42; }
+.add-btn:hover { background-color: #1e5e3a; }
 
 /* Footer */
-footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+footer { background: #0d0d0d; color: #aaa; text-align: center; padding: 20px; margin-top: 50px; }
 
 
-/* --- Formulaire CSS (CORRECTION FINALE) --- */
+/* --- Formulaire CSS (Dark Mode Correction) --- */
 .form-container {
-    background: white;
+    background: #333333; /* Fond foncé */
+    color: #e0e0e0;
     width: 350px; 
     margin: 50px auto; 
     padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
     border-radius: 8px;
-    border-top: 5px solid #2e8b57;
+    border-top: 5px solid #7fdbff; /* Bordure claire */
     text-align: left; 
 }
 
 .form-container label {
-    display: block; /* Mouchkel el Champs: kol Label fi satar */
+    display: block; 
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -90,15 +101,17 @@ footer { background: #333; color: white; text-align: center; padding: 20px; marg
     width: 100%;
     padding: 10px;
     margin: 0 0 15px 0; 
-    border: 1px solid #ccc;
+    border: 1px solid #555; /* Bordure input foncée */
+    background: #1a1a1a; /* Fond input foncé */
+    color: #e0e0e0; /* Texte input clair */
     border-radius: 4px;
-    box-sizing: border-box; /* 7all Mouhim barcha */
+    box-sizing: border-box; 
 }
 
 .form-container button {
     width: 100%;
-    background-color: #2e8b57;
-    color: white;
+    background-color: #7fdbff; /* Couleur bouton claire */
+    color: #1a1a1a;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -106,4 +119,4 @@ footer { background: #333; color: white; text-align: center; padding: 20px; marg
     font-size: 16px;
     margin-top: 10px;
 }
-.form-container button:hover { background-color: #246b42; }
+.form-container button:hover { background-color: #5bb2d9; }
